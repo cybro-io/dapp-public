@@ -1,0 +1,151 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.vaultStatsDesktop.vaultStatsDesktop {
+  display: none;
+}
+
+.vaultStatsContainer {
+  margin-bottom: 40px;
+}
+
+.historicalApyData {
+  margin-bottom: 40px;
+}
+
+.safetyScoreDetails {
+  margin-bottom: 40px;
+}
+
+.extendedVaultDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 50px;
+
+  .description {
+    color: $text-white-body80;
+  }
+
+  .button {
+    margin-right: auto;
+  }
+}
+
+.availableFunds {
+  margin-bottom: 40px;
+}
+
+.yieldBanner {
+  margin-bottom: 40px;
+}
+
+.yieldButton {
+  width: 100%;
+  justify-content: center;
+}
+
+.depositWithdrawTabsBig {
+  display: none;
+}
+
+.depositWithdrawTabs.depositWithdrawTabs {
+  position: sticky;
+  bottom: 20px;
+  box-shadow: 0 -2px 10px rgb(0 0 0 / 10%);
+
+  button {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.providerDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+
+  .description {
+    white-space: pre-wrap;
+    color: $text-white-body80;
+  }
+}
+
+.keyFeatures {
+  .title {
+    margin-bottom: 16px;
+  }
+}
+
+.keyFeaturesList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px; /* Ensure the bullets and text are aligned */
+  list-style-type: disc; /* Use default disc type */
+  gap: 12px;
+
+  li {
+    display: list-item;
+    font-family: $poppins-font;
+    font-weight: 400;
+    line-height: 1.5; /* Line height for readability */
+    color: $text-white-body80;
+  }
+}
+
+.feeBanner {
+  margin-bottom: 40px;
+}
+
+@media screen and (width >= 400px) {
+  .depositWithdrawTabs {
+    display: block;
+  }
+}
+
+@media screen and (width >= 600px) {
+  .vaultStatsMobile.vaultStatsMobile {
+    display: none;
+  }
+
+  .availableFunds {
+    display: none;
+  }
+
+  .vaultStatsDesktop.vaultStatsDesktop {
+    display: block;
+  }
+
+  .extendedVaultDescription {
+    display: none;
+  }
+
+  .yieldCalculator {
+    display: none;
+  }
+
+  .depositWithdrawTabs.depositWithdrawTabs {
+    display: none;
+  }
+}
+
+@include desktop {
+  .safetyScoreDetails {
+    order: 1;
+  }
+}
+
+@media screen and (width >= 1280px) {
+  .providerDescriptionTitle {
+    font-size: 36px;
+  }
+
+  .keyFeatures {
+    .title {
+      font-size: 20px;
+    }
+  }
+}

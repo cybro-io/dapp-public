@@ -1,0 +1,118 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.tableCell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: $poppins-font;
+  justify-content: center;
+  text-align: right;
+}
+
+.tableHeader {
+  display: contents;
+
+  .tableCell {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0;
+    font-family: $poppins-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: right;
+    color: $text-white-body60;
+    gap: 6px;
+    align-items: center;
+    justify-content: end;
+
+    &:first-child {
+      padding-left: 24px;
+      justify-content: start;
+    }
+
+    &:nth-child(2) {
+      justify-content: start;
+    }
+
+    &:last-child {
+      padding-right: 15px;
+    }
+  }
+}
+
+.sortButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  margin: auto;
+}
+
+.tableVault.tableVault,
+.tableHeader.tableHeader {
+  display: none;
+}
+
+.mobileSort {
+  display: flex;
+  margin-right: auto;
+  margin-bottom: 12px;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (width >= 826px) {
+  .table {
+    display: grid;
+    grid-template-columns: 4fr 1fr repeat(4, 2fr);
+    width: 100%;
+    gap: 0;
+  }
+
+  .mobileSort.mobileSort {
+    display: none;
+  }
+
+  .compactVault.compactVault {
+    display: none;
+  }
+
+  .tableVault.tableVault,
+  .tableHeader.tableHeader {
+    display: contents;
+  }
+
+  .tableHeader {
+    .tableCell {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (width >= 1000px) {
+  .table {
+    grid-template-columns: 5fr 1fr repeat(4, 2fr);
+  }
+
+  .tableHeader {
+    .tableCell {
+      font-size: 16px;
+    }
+  }
+}

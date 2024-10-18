@@ -1,0 +1,85 @@
+.vaults {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.pointsHuntDesktop {
+  display: none;
+}
+
+.referralBannerDesktop.referralBannerDesktop {
+  display: none;
+}
+
+.joinBannerMobile {
+  width: calc(100% + (24px * 2));
+  margin-left: -24px;
+}
+
+.joinBannerDesktop.joinBannerDesktop {
+  display: none;
+}
+
+.pointsHuntButton {
+  justify-content: center;
+}
+
+@media screen and (width >= 700px) {
+  .vaults {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pointsHuntDesktop {
+    display: flex;
+  }
+
+  .referralBannerMobile {
+    display: none;
+  }
+}
+
+@media screen and (width >= 1140px) {
+  .vaults {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .joinBannerDesktop {
+    display: block;
+  }
+
+  .pointsHuntMobile.pointsHuntMobile {
+    display: none;
+  }
+
+  .pointsHunt {
+    display: flex;
+  }
+
+  .pointsHuntTitle {
+    font-family: $unbounded-font;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .pointsHuntTitleAccent {
+    color: $text-accent-yellow;
+  }
+
+  .referralBannerMobile.referralBannerMobile {
+    display: none;
+  }
+
+  .referralBannerDesktop.referralBannerDesktop {
+    display: flex;
+    grid-column: 1/3;
+  }
+
+  .referralBannerButton {
+    width: 100%;
+    justify-content: center;
+  }
+}

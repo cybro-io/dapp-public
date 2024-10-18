@@ -1,0 +1,72 @@
+.projectedYield {
+  margin-bottom: 16px;
+}
+
+.tabsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weeklyApyPercents {
+  font-weight: 700;
+}
+
+.yieldTabs {
+  margin-bottom: 16px;
+
+  > div {
+    background-color: $button-secondary-defaultBg;
+  }
+}
+
+.yieldContainer {
+  padding: 16px;
+  background-color: $background-window;
+  border-radius: 20px;
+}
+
+.resultTitle.resultTitle {
+  margin-bottom: 8px;
+  text-transform: initial;
+  color: $text-white-body60;
+}
+
+.resultValue.resultValue {
+  line-height: 24px;
+}
+
+.resultActualValue.resultActualValue {
+  font-size: 14px;
+  color: $text-white-body60;
+}
+
+.yieldValuesContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.yieldPercents {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.balanceAfter {
+  margin-bottom: 18px;
+  font-weight: 500;
+  color: $text-white-body80;
+}
+
+.balanceAfterValue {
+  font-weight: 700;
+  color: $text-white-body100;
+}
+
+.submitButton,
+.connectButton {
+  width: 100%;
+  justify-content: center;
+}

@@ -1,0 +1,96 @@
+.tableRow {
+  display: contents;
+
+  &.dark {
+    .tableCell {
+      background-color: $background-tableRow;
+    }
+  }
+
+  &:hover {
+    .tableCell {
+      border-color: $text-accent-yellow;
+
+      &:first-child {
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+    }
+  }
+}
+
+.tableCell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 15px 0;
+  font-family: $poppins-font;
+  text-align: right;
+  color: $text-white-body80;
+  border-top: 2px solid;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  justify-content: center;
+
+  &:first-child {
+    padding-left: 15px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-left: 2px solid transparent;
+  }
+
+  &:last-child {
+    padding-right: 24px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-right: 2px solid transparent;
+  }
+}
+
+.cellTokens {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.vaultName {
+  margin-right: 16px;
+  margin-bottom: 6px !important;
+  text-align: left;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+  justify-content: start;
+}
+
+.providerCell {
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+}
+
+.assetsCell {
+  display: flex;
+  flex-direction: column;
+  font-family: $poppins-font;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  align-items: start;
+  color: $text-white-body40;
+  gap: 2px;
+}
+
+.trustScoreCell {
+  align-items: end;
+}

@@ -1,0 +1,38 @@
+.root {
+  padding: 8px 12px;
+  background-color: $background-tooltip;
+  border-radius: 8px;
+  backdrop-filter: blur(32.5px);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: $unbounded-font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: $text-white-body100;
+}
+
+.value {
+  font-family: $poppins-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: $text-white-body60;
+}

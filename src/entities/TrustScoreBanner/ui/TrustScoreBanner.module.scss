@@ -1,0 +1,138 @@
+.trustScoreLeft {
+  margin-bottom: 16px;
+}
+
+.tooltip.tooltip {
+  display: none;
+}
+
+.inspectedContainer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.auditedBy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  font-weight: 700;
+}
+
+.auditor {
+  font-family: $unbounded-font;
+}
+
+.vaultDescription.vaultDescription {
+  margin-bottom: 16px;
+  color: $text-white-body80;
+}
+
+.trustScoreDesktop.trustScoreDesktop {
+  display: none;
+}
+
+.cornerTopLeft,
+.cornerTopRight,
+.cornerBottomLeft,
+.cornerBottomRight {
+  display: none;
+}
+
+@media screen and (width >= 750px) {
+  .root {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 28px;
+    background: repeating-linear-gradient(
+      135deg,
+      $background-modal,
+      $background-modal 20px,
+      $background-window 20px,
+      $background-window 40px
+    );
+    border-radius: 15px;
+  }
+
+  .cornerTopLeft,
+  .cornerTopRight,
+  .cornerBottomLeft,
+  .cornerBottomRight {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    width: 19px;
+    height: 19px;
+    background-image: url('../assets/icons/corner.svg');
+    background-repeat: no-repeat;
+  }
+
+  .cornerTopLeft {
+    top: 0;
+    left: 0;
+  }
+
+  .cornerTopRight {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+  }
+
+  .cornerBottomLeft {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+
+  .cornerBottomRight {
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+  }
+
+  .trustScoreDesktop.trustScoreDesktop {
+    display: flex;
+  }
+
+  .trustScoreMobile.trustScoreMobile {
+    display: none;
+  }
+
+  .trustScoreLeft {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0;
+    justify-content: space-between;
+  }
+
+  .trustScoreRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .trustScore {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .tooltip.tooltip {
+    display: flex;
+  }
+}
+
+@media screen and (width >= 1100px) {
+  .root {
+    flex-direction: column;
+  }
+}
+
+@media screen and (width >= 1280px) {
+  .root {
+    flex-direction: row;
+  }
+}
