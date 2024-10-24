@@ -1,0 +1,161 @@
+.calculator {
+  margin-bottom: 16px;
+  background-color: $background-card;
+  border: 1px solid $stroke-tableBorder;
+  border-radius: 20px;
+}
+
+.userInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $background-chips;
+  border-radius: 20px;
+}
+
+.userInput {
+  padding: 16px;
+  padding-top: 24px;
+}
+
+.availableFunds {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: $text-accent-logoYellow;
+  border-radius: 20px;
+
+  .title {
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: initial;
+    color: $text-black-body100;
+  }
+
+  .value {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: $text-black-body100;
+  }
+
+  .equal {
+    color: $text-black-body60;
+  }
+
+  .asset {
+    text-transform: none;
+    color: $text-black-body60;
+  }
+}
+
+.currentToken {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+
+  .title {
+    margin-bottom: 5px;
+    line-height: 150%;
+    text-transform: initial;
+  }
+
+  .value {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .tokenValue {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .network {
+    text-transform: initial;
+    color: $text-white-body40;
+  }
+
+  .iconContainer {
+    svg {
+      width: 28px;
+      height: 24px;
+    }
+  }
+}
+
+.label {
+  margin-bottom: 6px;
+}
+
+.inputContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed $stroke-tableBorder;
+  align-items: center;
+  gap: 24px;
+
+  .input {
+    flex-grow: 1;
+    font-family: $unbounded-font;
+    font-size: 20px;
+    line-height: 24px;
+    white-space: nowrap;
+    color: $text-white-body100;
+    background-color: transparent;
+    outline: none;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .equal {
+    flex-shrink: 0;
+    font-family: $poppins-font;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: right;
+    white-space: nowrap;
+    color: $text-white-body60;
+  }
+}
+
+.percentButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.percentButton {
+  width: 100%;
+  padding: 4px 10px;
+  font-family: $poppins-font;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%;
+  color: $text-white-body100;
+  background-color: $background-chips;
+  border: 1px solid transparent;
+  border-radius: 20px;
+
+  &:hover:enabled {
+    border: 1px solid $stroke-whiteBorder;
+  }
+
+  &:active:enabled {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+.percentButtonSelected {
+  color: $text-black-body100;
+  background-color: $background-accentBold;
+}

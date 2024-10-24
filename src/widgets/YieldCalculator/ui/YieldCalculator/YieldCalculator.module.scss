@@ -1,0 +1,214 @@
+.calculator {
+  margin-bottom: 16px;
+  background-color: $background-card;
+  border: 1px solid $stroke-tableBorder;
+  border-radius: 20px;
+}
+
+.userInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $background-chips;
+  border-radius: 20px;
+}
+
+.userInput {
+  padding: 16px;
+}
+
+.availableFunds {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: $text-accent-logoYellow;
+  border-radius: 20px;
+
+  .title {
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: initial;
+    color: $text-black-body100;
+  }
+
+  .value {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: $text-black-body100;
+  }
+
+  .equal {
+    color: $text-black-body60;
+  }
+}
+
+.currentToken {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+
+  .title {
+    margin-bottom: 5px;
+    line-height: 150%;
+    text-transform: initial;
+  }
+
+  .value {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .tokenValue {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .network {
+    text-transform: initial;
+    color: $text-white-body40;
+  }
+
+  .iconContainer {
+    svg {
+      width: 28px;
+      height: 24px;
+    }
+  }
+}
+
+.projectedYield {
+  margin-bottom: 16px;
+}
+
+.tabsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weeklyApyPercents {
+  font-weight: 700;
+}
+
+.yieldTabs {
+  margin-bottom: 16px;
+
+  > div {
+    background-color: $button-secondary-defaultBg;
+  }
+}
+
+.yieldContainer {
+  padding: 16px;
+  background-color: $background-window;
+  border-radius: 20px;
+}
+
+.resultTitle.resultTitle {
+  margin-bottom: 8px;
+  text-transform: initial;
+  color: $text-white-body60;
+}
+
+.resultValue.resultValue {
+  line-height: 24px;
+}
+
+.resultActualValue.resultActualValue {
+  font-size: 14px;
+  color: $text-white-body60;
+}
+
+.yieldValuesContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.yieldPercents {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.balanceAfter {
+  margin-bottom: 18px;
+  font-weight: 500;
+  color: $text-white-body80;
+}
+
+.balanceAfterValue {
+  font-weight: 700;
+  color: $text-white-body100;
+}
+
+.submitButton {
+  width: 100%;
+  justify-content: center;
+}
+
+.yourWithdraw {
+  margin-bottom: 10px;
+  padding: 16px;
+  background: $button-secondary-defaultBg;
+  border-radius: 16px;
+
+  .resultValue {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+.yourWithdrawResultContainer {
+  display: flex;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed $stroke-tableBorder;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tetherIconContainer {
+  svg {
+    width: 23px;
+    height: 20px;
+  }
+}
+
+.middleLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.currentRateContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.currentRateValue {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.feeContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: auto;
+}
+
+.feeTitle.feeTitle {
+  color: $text-white-body60;
+}

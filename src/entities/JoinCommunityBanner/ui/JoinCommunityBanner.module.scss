@@ -1,0 +1,66 @@
+.root {
+  background-image: url('/RectBg.svg');
+}
+
+.heading {
+  font-family: $unbounded-font;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: $text-accent-yellow;
+}
+
+.outerContainer {
+  height: 100%;
+  padding: 24px;
+}
+
+.innerContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+.cornerTopLeft,
+.cornerTopRight,
+.cornerBottomLeft,
+.cornerBottomRight {
+  position: absolute;
+  box-sizing: border-box;
+  width: 19px;
+  height: 19px;
+  background-image: url('../assets/icons/corner.svg');
+}
+
+.cornerTopLeft {
+  top: 0;
+  left: 0;
+}
+
+.cornerTopRight {
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+.cornerBottomLeft {
+  bottom: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
+
+.cornerBottomRight {
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}

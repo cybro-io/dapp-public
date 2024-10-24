@@ -1,0 +1,101 @@
+.root {
+  padding: 16px 16px 8px;
+  background-color: black;
+  background-image: url('../assets/img/feeBg.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  clip-path: polygon(
+    1rem 0%,
+    100% 0%,
+    100% calc(100% - 1rem),
+    calc(100% - 1rem) 100%,
+    0% 100%,
+    0% 1rem
+  );
+}
+
+.items {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  padding-left: 60px;
+  gap: 5px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.title.title,
+.value.value {
+  font-family: $unbounded-font;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: white;
+}
+
+.value.value {
+  opacity: 0.6;
+}
+
+.description.description {
+  font-family: $poppins-font;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-shadow: 0 0 4px #000000;
+  color: white;
+
+  .dark {
+    opacity: 0.6;
+  }
+}
+
+.gradient {
+  background: linear-gradient(90deg, #fbff3a 30%, #ffffff 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.line {
+  flex-grow: 1;
+  height: 2px;
+  margin-top: auto;
+  margin-bottom: 5px;
+  border-bottom: 2px dashed #3a3b45;
+}
+
+@media screen and (width >= 600) {
+  .title.title,
+  .value.value {
+    font-size: 16px;
+  }
+
+  .description.description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (width >= 800px) {
+  .title.title,
+  .value.value {
+    font-size: 23px;
+  }
+
+  .description.description {
+    padding-left: 90px;
+    font-size: 12px;
+  }
+
+  .items {
+    padding-left: 90px;
+  }
+}
