@@ -1,0 +1,81 @@
+.yourWithdraw {
+  margin-bottom: 10px;
+  padding: 16px;
+  background: $button-secondary-defaultBg;
+  border-radius: 16px;
+}
+
+.resultValue {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.resultTitle.resultTitle {
+  margin-bottom: 8px;
+  text-transform: initial;
+  color: $text-white-body60;
+}
+
+.yourWithdrawResultContainer {
+  display: flex;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed $stroke-tableBorder;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tetherIconContainer {
+  svg {
+    width: 23px;
+    height: 20px;
+  }
+}
+
+.resultActualValue.resultActualValue {
+  font-size: 14px;
+  color: $text-white-body60;
+}
+
+.middleLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.currentRateContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.currentRateValue {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.feeContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: auto;
+}
+
+.feeTitle.feeTitle {
+  color: $text-white-body60;
+}
+
+.submitButton,
+.connectButton {
+  width: 100%;
+  justify-content: center;
+}

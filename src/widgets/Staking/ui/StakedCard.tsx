@@ -1,0 +1,72 @@
+import React from 'react';
+
+import clsx from 'clsx';
+import dayjs from 'dayjs';
+
+import { IStakedReport } from '@/entities/Staking';
+import { ClaimRewardButton, UnstakeButton } from '@/features/Stake';
+import { Group, Stack, Title, Typography } from '@/shared/ui';
+import { formatUserMoney } from '@/shared/utils';
+import LockedCybroIcon from '@assets/assets/locked-cybro.svg';
+
+interface StackedCardProps {
+  reward: string;
+  report: IStakedReport;
+  address: string;
+}
+
+export const StakedCard = ({ report, reward, address }: StackedCardProps) => {
+  const isFinished = dayjs().isAfter(report.unlockTimestamp * 1000);
+
+  return (
+    <Stack className="gap-2 py-6 lg:py-4 px-6 bg-background-card lg:bg-background-window rounded-[14px]">
+      <Group className="justify-between">
+        <Title order={5}>Staked Locked CYBRO</Title>
+        {isFinished ? (
+          <Typography variant="caption" order={4} className="text-white/40">
+            Staking Finished
+          </Typography>
+        ) : (
+          <Typography variant="caption" order={4}>
+            <span className="text-white/60">End </span>
+            {dayjs(report.unlockTimestamp * 1000).format('DD MMM YYYY')}
+          </Typography>
+        )}
+      </Group>
+
+      <Group className="gap-2">
+        <LockedCybroIcon />
+        <Typography order={2} weight="bold">
+          {formatUserMoney(report.balance)}
+        </Typography>
+
+        <Group
+          className={clsx(
+            'justify-center items-center px-2 py-1 rounded-md',
+            'text-text-accent-logoYellow bg-trustScore-yellow-100/15',
+          )}
+        >
+          <Typography order={3} weight="bold">
+            +{formatUserMoney(reward)}
+          </Typography>
+        </Group>
+      </Group>
+
+      <Typography
+        variant="caption"
+        order={4}
+        weight="medium"
+        className="text-white/60 max-w-[319px]"
+      >
+        If you add more Locked CYBRO to this staking pool, the staking duration
+        will reset, and the countdown will start from the new date.
+      </Typography>
+
+      {isFinished ? (
+        <UnstakeButton stakeAddress={address} />
+      ) : (
+        <ClaimRewardButton stakeAddress={address} />
+      )}
+    </Stack>
+  );
+};

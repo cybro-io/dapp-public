@@ -1,0 +1,18 @@
+.heading.heading {
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+.description {
+  display: none;
+}
+
+.chartContainer {
+  padding-top: 16px;
+  background-color: $background-card;
+  border: 1px solid $stroke-tableBorder;
+  border-radius: 20px;
+}

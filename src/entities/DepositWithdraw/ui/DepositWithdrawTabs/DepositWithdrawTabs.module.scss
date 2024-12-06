@@ -1,0 +1,30 @@
+.tabs {
+  margin-bottom: 16px;
+
+  > div {
+    font-family: $unbounded-font;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 120%;
+    background-color: $button-secondary-defaultBg;
+  }
+}
+
+.tab.tab {
+  height: 100%;
+  padding: 18px 40px;
+
+  > div {
+    text-transform: uppercase;
+  }
+}
+
+.activeTab.activeTab {
+  span {
+    background-color: $background-accentBold;
+  }
+
+  div {
+    color: $button-primary-defaultLabel !important;
+  }
+}
