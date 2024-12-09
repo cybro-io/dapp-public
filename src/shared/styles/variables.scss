@@ -1,0 +1,208 @@
+/* stylelint-disable */
+
+/** BACKGROUND **/
+$background-window: #11121a;
+$background-modal: #020206;
+$background-card: #000000;
+$background-tableRow: #1a1b25;
+$background-chips: #24252e;
+$background-bgBlur: rgba(0, 0, 0, 0.5);
+$background-accentBold: #f9e727;
+$background-white: #ffffff;
+$background-tooltip: rgb(109 109 109);
+$background-header: rgba(255, 255, 255, 0.05);
+$background-accent-linear: linear-gradient(
+  90deg,
+  #f0d025 0%,
+  #fff627 50.42%,
+  #f0d025 100%
+);
+
+/** TEXT **/
+$text-white-heading: #ffffff;
+$text-white-body100: #ffffff;
+$text-white-body80: rgba(255, 255, 255, 0.8);
+$text-white-body60: rgba(255, 255, 255, 0.6);
+$text-white-body40: rgba(255, 255, 255, 0.4);
+$text-black-heading: #000000;
+$text-black-body100: #000000;
+$text-black-body60: rgba(0, 0, 0, 0.6);
+$text-accent-logoYellow: #fbff3a;
+$text-accent-yellow: #f9e727;
+
+/** TRUST SCORE **/
+$trustScore-green-100: #04e000;
+$trustScore-green-50: rgba(4, 224, 0, 0.5);
+$trustScore-green-15: rgba(4, 224, 0, 0.15);
+$trustScore-yellow-100: #f9e727;
+$trustScore-yellow-15: rgba(249, 231, 39, 0.15);
+$trustScore-red-100: #ff3d6c;
+$trustScore-red-50: rgba(255, 61, 108, 0.5);
+$trustScore-red-15: rgba(255, 61, 108, 0.15);
+
+/** ERROR **/
+$error-label: #ff3d6c;
+$error-bg: #5f192a;
+
+/** BUTTON PRIMARY **/
+$button-primary-defaultBg: linear-gradient(
+  90deg,
+  #f0d025 0%,
+  #fff627 50.42%,
+  #f0d025 100%
+);
+$button-primary-hoverBg: linear-gradient(
+  90deg,
+  #f0d025 0%,
+  #fff627 50.42%,
+  #f0d025 100%
+);
+$button-primary-defaultLabel: #0b0c1b;
+$button-primary-hoverLabel: #0b0c1b;
+$button-primary-disabledBg: #9b8e00;
+$button-primary-disabledLabel: #0b0c1b;
+
+/** BUTTON SECONDARY **/
+$button-secondary-defaultBg: #1a1b25;
+$button-secondary-defaultLabel: #ffffff;
+$button-secondary-hoverBg: #1a1b25;
+$button-secondary-hoverLabel: #ffffff;
+$button-secondary-hoverStroke: #f9e727;
+$button-secondary-disabledBg: #252525;
+$button-secondary-disabledLabel: #666666;
+
+/** STROKE **/
+$stroke-cardHover: #f9e727;
+$stroke-tableBorder: #3a3b45;
+$stroke-whiteBorder: #ffffff;
+
+/** LINK **/
+$link-disabled-disabledLabel: #666666;
+$link-defaultLabel: #b3b5c0;
+$link-hoverLabel: #ffffff;
+
+/** MENU **/
+$menu-defaultLabel: #ffffff;
+$menu-hoverLabel: #f9e727;
+$menu-selectedLabel: #0b0c1b;
+$menu-selectedBg: #ffffff;
+$menu-disabledLabel: #0b0c1b;
+
+/** FONTS **/
+$poppins-font: var(--font-poppins), sans-serif;
+$unbounded-font: var(--font-unbounded), sans-serif;
+$notoSansMono-font: var(--font-noto-sans-mono), sans-serif;
+
+/** MEDIA **/
+$landscape-width: 568px;
+$tablet-width: 768px;
+$laptop-width: 998px;
+$desktop-width-large: 1280px;
+$desktop-width: 1100px;
+$desktop-width-default: 1024px;
+$app-max-width: 1280px;
+
+/** CHIPS **/
+$chips-blue-dark: #1b1a5a;
+$chips-blue-light: #b7b6ff;
+$chips-green-dark: #1f3e1c;
+$chips-green-light: #83ff81;
+
+@mixin laptop {
+  @media (min-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+@mixin max-landscape {
+  @media (max-width: #{$landscape-width}) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (min-width: #{$landscape-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-default {
+  @media (min-width: #{$desktop-width-default}) {
+    @content;
+  }
+}
+
+@mixin desktopLarge {
+  @media (min-width: #{$desktop-width-large}) {
+    @content;
+  }
+}
+
+@mixin tabletOnly {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+/* Tailwind media queries */
+$sm-screen: 640px;
+$md-screen: 768px;
+$fund-order-screen: 940px;
+$lg-screen: 1024px;
+$lg2-screen: 1100px;
+$xl-screen: 1280px;
+$xl2-screen: 1536px;
+
+@mixin sm-screen {
+  @media (min-width: #{$sm-screen}) {
+    @content;
+  }
+}
+
+@mixin md-screen {
+  @media (min-width: #{$md-screen}) {
+    @content;
+  }
+}
+
+@mixin fund-order-screen {
+  @media (min-width: #{$fund-order-screen}) {
+    @content;
+  }
+}
+
+@mixin lg-screen {
+  @media (min-width: #{$lg-screen}) {
+    @content;
+  }
+}
+
+@mixin lg2-screen {
+  @media (min-width: #{$lg2-screen}) {
+    @content;
+  }
+}
+
+@mixin xl-screen {
+  @media (min-width: #{$xl-screen}) {
+    @content;
+  }
+}
+
+@mixin xl2-screen {
+  @media (min-width: #{$xl2-screen}) {
+    @content;
+  }
+}

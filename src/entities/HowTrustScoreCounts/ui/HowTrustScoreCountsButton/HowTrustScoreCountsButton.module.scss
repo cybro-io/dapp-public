@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tooltip.tooltip {
+  width: 375px;
+}
+
+.text {
+  font-family: $unbounded-font;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $link-defaultLabel;
+}
