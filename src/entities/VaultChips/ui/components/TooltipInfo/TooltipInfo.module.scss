@@ -1,0 +1,31 @@
+.title {
+  margin-bottom: 4px;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.chipItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 180px;
+  padding: 4px;
+
+  &.dark {
+    background: rgb(26 27 37 / 25%);
+  }
+}
+
+.itemValue {
+  color: $text-white-body60;
+}
+
+.itemTitle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: $text-white-body60;
+}

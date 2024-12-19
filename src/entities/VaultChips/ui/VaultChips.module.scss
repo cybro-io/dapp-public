@@ -1,0 +1,43 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.chip.chip {
+  display: flex;
+  font-family: $poppins-font;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 130%;
+  text-transform: initial;
+  align-items: center;
+}
+
+.infoChip {
+  width: 28px;
+  height: 28px;
+  justify-content: center;
+}
+
+.tooltipChip {
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &.open {
+    color: $text-black-body100;
+    background-color: $background-accentBold;
+
+    svg {
+      fill: $text-black-body100;
+    }
+  }
+}
+
+.tooltipContainer {
+  padding: 16px;
+  background-color: $background-tooltip;
+  border-radius: 20px;
+  backdrop-filter: blur(32.5px);
+}
