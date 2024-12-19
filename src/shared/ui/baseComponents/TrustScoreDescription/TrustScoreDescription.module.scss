@@ -1,0 +1,92 @@
+.root {
+  display: flex;
+  gap: 16px;
+  align-items: start;
+}
+
+.trustScoreRating {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+  align-items: center;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.description {
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cornerTopLeft,
+.cornerTopRight,
+.cornerBottomLeft,
+.cornerBottomRight {
+  position: absolute;
+  box-sizing: border-box;
+  width: 19px;
+  height: 19px;
+  background-image: url('./assets/corner.svg');
+  background-repeat: no-repeat;
+}
+
+.cornerTopLeft {
+  top: 0;
+  left: 0;
+}
+
+.cornerTopRight {
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+.cornerBottomLeft {
+  bottom: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
+
+.cornerBottomRight {
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+.descriptionValue {
+  color: $text-white-body60;
+}
+
+.value {
+  font-family: $unbounded-font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.maxTrustScore {
+  font-size: 14px;
+}
+
+.positive {
+  .value {
+    color: $trustScore-green-100;
+  }
+
+  .maxTrustScore {
+    color: $trustScore-green-50;
+  }
+}
+
+.negative {
+  .value {
+    color: $trustScore-red-100;
+  }
+
+  .maxTrustScore {
+    color: $trustScore-red-50;
+  }
+}

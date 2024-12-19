@@ -1,0 +1,103 @@
+.root {
+  width: 100%;
+}
+
+.history,
+.balance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.balanceOverview {
+  margin-bottom: 16px;
+}
+
+.historyTabs {
+  width: 100%;
+  margin-bottom: 16px;
+
+  &Desktop {
+    display: none !important;
+  }
+}
+
+.tabList {
+  width: 100%;
+  border-radius: 100px;
+}
+
+.title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.tabContent {
+  font-size: 12px;
+  font-weight: 500;
+  color: $text-white-body60;
+}
+
+.tab.tab {
+  height: 28px;
+
+  span {
+    background-color: $background-white;
+    border-radius: 100px;
+  }
+}
+
+@include desktop {
+  .root {
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 24px;
+    background-color: $background-card;
+    border-radius: 30px;
+    gap: 26px;
+  }
+
+  .historyTitle.historyTitle {
+    display: none;
+  }
+
+  .balanceTitle {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .historyTabs {
+    margin-left: auto;
+
+    &Mobile {
+      display: none !important;
+    }
+
+    &Desktop {
+      display: block !important;
+    }
+  }
+
+  .transactionHistory {
+    display: flex;
+  }
+
+  .balanceChart {
+    height: 450px;
+    padding: 0;
+    border: 0;
+  }
+
+  .balanceOverview {
+    margin-bottom: 0;
+  }
+
+  .balanceChartContainer {
+    padding: 0 38px;
+  }
+}
