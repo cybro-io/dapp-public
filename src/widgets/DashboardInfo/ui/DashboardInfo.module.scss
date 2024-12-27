@@ -1,0 +1,27 @@
+.mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (width >= 1060px) {
+  .desktop {
+    display: grid;
+    grid-template-columns: 4fr 4fr 3.5fr 6fr;
+    gap: 24px;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+@include desktop {
+  .root {
+    padding: 0 38px;
+  }
+}
