@@ -1,0 +1,56 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 7px;
+  background-color: $background-card;
+  border: 1px solid $stroke-tableBorder;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.historyTabs {
+  margin: auto;
+}
+
+.tabContent {
+  font-size: 12px;
+  font-weight: 500;
+  color: $text-white-body60;
+}
+
+.tabList {
+  background-color: transparent;
+  border-radius: 100px;
+}
+
+.tab.tab {
+  height: 28px;
+
+  span {
+    background-color: $background-white;
+    border-radius: 100px;
+  }
+}
+
+.loader {
+  margin: auto;
+}
+
+.emptyText {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: $poppins-font;
+  font-size: 16px;
+  text-align: center;
+}
+
+@include desktop {
+  .root {
+    padding: 0;
+  }
+
+  .historyTabs {
+    display: none;
+  }
+}
