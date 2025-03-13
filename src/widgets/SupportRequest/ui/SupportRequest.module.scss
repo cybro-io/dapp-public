@@ -1,0 +1,62 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.emailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-family: $poppins-font;
+    font-size: 14px;
+  }
+
+  input {
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid $stroke-tableBorder;
+    border-radius: 10px;
+    outline: none;
+
+    &:focus {
+      border: 1px solid $text-accent-yellow;
+    }
+  }
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-family: $poppins-font;
+    font-size: 14px;
+  }
+
+  textarea {
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid $stroke-tableBorder;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+
+    &:focus {
+      border: 1px solid $text-accent-yellow;
+    }
+  }
+}
+
+.submitButton {
+  justify-content: center;
+}
+
+.error {
+  font-family: $poppins-font;
+  font-size: 12px;
+  color: $error-label;
+}

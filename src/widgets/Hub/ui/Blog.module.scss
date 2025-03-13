@@ -1,0 +1,23 @@
+.blog {
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #11121a transparent transparent #11121a;
+    content: '';
+    pointer-events: none;
+  }
+
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent #11121a #11121a transparent;
+    content: '';
+    pointer-events: none;
+  }
+}

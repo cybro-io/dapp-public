@@ -1,0 +1,15 @@
+'use client';
+
+import React from 'react';
+
+import { FlagProvider as VendorFlagProvider } from '@unleash/proxy-client-react';
+
+const config = {
+  url: process.env.NEXT_PUBLIC_UNLEASH_API_URL ?? '',
+  clientKey: process.env.NEXT_PUBLIC_UNLEASH_API_KEY ?? '',
+  appName: 'dapp',
+};
+
+export const FlagProvider = ({ children }: React.PropsWithChildren) => {
+  return <VendorFlagProvider config={config}>{children}</VendorFlagProvider>;
+};
