@@ -1,0 +1,35 @@
+.root {
+  background-color: transparent;
+  border: 1px solid $stroke-tableBorder;
+  border-radius: 12px;
+}
+
+.availableFundsInnerContainer {
+  display: flex;
+  margin: 4px;
+  padding: 12px 16px;
+  background-color: #24252e;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.fundsTitle {
+  font-family: $poppins-font;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: initial;
+  color: $text-white-body60;
+}
+
+.fundsValue {
+  display: flex;
+  font-family: $unbounded-font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  align-items: center;
+  gap: 6px;
+}
