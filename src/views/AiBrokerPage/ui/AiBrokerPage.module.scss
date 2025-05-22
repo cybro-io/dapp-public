@@ -1,0 +1,10 @@
+.bg {
+  padding-top: 0;
+  background: transparent;
+
+  @include md-screen {
+    padding-top: 50px;
+    background: url('../../../shared/assets/images/AiBrokerBg.png') center
+      no-repeat;
+  }
+}
