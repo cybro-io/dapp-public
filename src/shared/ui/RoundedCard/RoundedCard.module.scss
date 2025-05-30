@@ -1,0 +1,8 @@
+.container {
+  @apply outline-1 outline outline-stroke-tableBorder rounded-[20px];
+  @apply flex flex-col gap-3 pb-4;
+}
+
+.header {
+  @apply bg-background-chips rounded-[20px] relative px-1.5 pt-1.5 pb-2.5;
+}
