@@ -1,0 +1,88 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: $unbounded-font;
+  font-weight: 900;
+  line-height: 120%;
+  text-transform: uppercase;
+
+  /** Adding a transparent border by default to prevent changing the size on hover **/
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+  align-items: center;
+  gap: 8px;
+
+  &:active:enabled > * {
+    opacity: 0.8;
+  }
+}
+
+.primary {
+  color: $button-primary-defaultLabel;
+  background: $button-primary-defaultBg;
+
+  svg {
+    fill: $button-primary-defaultLabel;
+  }
+
+  &:not(:disabled):hover {
+    background: $button-primary-hoverBg;
+    box-shadow: 0 0 30px 0 rgb(251 255 58 / 60%);
+  }
+
+  &:disabled {
+    color: $button-primary-disabledLabel;
+    background: $button-primary-disabledBg;
+  }
+}
+
+.secondary {
+  color: $button-secondary-defaultLabel;
+  background: $button-secondary-defaultBg;
+
+  svg {
+    fill: $button-secondary-defaultLabel;
+  }
+
+  &:not(:disabled):hover {
+    border: 1px solid $button-secondary-hoverStroke;
+  }
+
+  &:disabled {
+    color: $button-secondary-disabledLabel;
+    background: $button-secondary-disabledBg;
+
+    svg {
+      fill: $button-secondary-disabledLabel;
+    }
+  }
+}
+
+.large {
+  height: 70px;
+  padding-inline: 42px;
+  font-size: 16px;
+  border-radius: 16px;
+}
+
+.medium {
+  height: 53px;
+  padding-inline: 22px;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+.small {
+  height: 36px;
+  padding-inline: 14px;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 8px;
+  gap: 6px;
+}
+
+.iconContainer {
+  display: flex;
+}
