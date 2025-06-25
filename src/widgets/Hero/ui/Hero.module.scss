@@ -1,0 +1,54 @@
+.heroSection {
+  display: none;
+}
+
+@include desktop-default {
+  .heroSection {
+    display: block;
+    padding: 72px 130px 100px;
+    background:
+      linear-gradient(180deg, rgb(17 18 26 / 0%) 0%, $background-window 100%),
+      url('/RectBg.svg') repeat,
+      url('/CybroBgGrey.svg') top / 100% no-repeat;
+  }
+
+  .heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: $unbounded-font;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .headingBackground {
+    padding-right: 10px;
+    padding-left: 10px;
+    background: linear-gradient(
+      148deg,
+      rgb(255 255 255 / 10%) 3.15%,
+      rgb(107 109 121 / 7%) 96.78%
+    );
+    border-radius: 10px;
+    backdrop-filter: blur(45px);
+  }
+
+  .headingBackgroundTop {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      left: 0;
+      width: 411px;
+      height: 113px;
+      margin: 0 auto;
+      background-color: $text-accent-logoYellow;
+      opacity: 0.2;
+      filter: blur(65px);
+      content: '';
+    }
+  }
+}

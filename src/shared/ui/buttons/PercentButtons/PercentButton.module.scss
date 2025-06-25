@@ -1,0 +1,20 @@
+.percentButton {
+  width: fit-content;
+  padding: 4px 10px;
+  font-family: $poppins-font;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%;
+  color: $text-white-body100;
+  background-color: $background-chips;
+  border: 1px solid transparent;
+  border-radius: 20px;
+
+  &:hover {
+    border: 1px solid $stroke-whiteBorder;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
