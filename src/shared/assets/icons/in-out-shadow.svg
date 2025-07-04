@@ -1,0 +1,18 @@
+<svg width="341" height="275" viewBox="0 0 341 275" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="OutlinedBox 1948757602">
+<g id="Union" opacity="0.5" filter="url(#filter0_f_1689_207161)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M140.034 100.051L100.047 136.865L140.034 174.948H200.967L240.954 136.865L200.967 100.051H140.034ZM123.531 136.865L141.57 154.388L179.405 116.554H145.747L123.531 136.865ZM198.229 119.273L159.057 158.445H195.254L217.469 136.865L198.229 119.273Z" fill="#FBFF3A"/>
+</g>
+<g id="Vector">
+<path d="M174.598 108.625H187.807L130.568 165.864L137.173 124.035L145.979 137.244L174.598 108.625Z" fill="#FBFF3A"/>
+<path d="M166.328 165.864H153.119L210.357 108.625L203.753 150.453L194.947 137.244L166.328 165.864Z" fill="#FBFF3A"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_1689_207161" x="0.046875" y="0.0507812" width="340.908" height="274.898" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_1689_207161"/>
+</filter>
+</defs>
+</svg>

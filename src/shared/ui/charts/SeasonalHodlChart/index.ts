@@ -1,0 +1,1 @@
+export { SeasonalHoldChart } from './SeasonalHoldChart';

@@ -1,0 +1,19 @@
+.root {
+  background: url('../lib/assets/vault-wait-list-bg.png'), $background-modal;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 136px 168px;
+
+  &[data-success='true'] {
+    background:
+      url('../lib/assets/vault-wait-list-success-bg.png'), $background-modal;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+
+  @include md-screen {
+    background-position: top;
+    background-size: auto;
+  }
+}

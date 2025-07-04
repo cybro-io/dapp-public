@@ -1,0 +1,115 @@
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.chip {
+  margin: auto;
+}
+
+.vaults {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.pointsHuntDesktop {
+  display: none;
+}
+
+.referralBannerDesktop.referralBannerDesktop {
+  display: none;
+}
+
+.joinBannerMobile {
+  width: calc(100% + (24px * 2));
+  margin-left: -24px;
+}
+
+.joinBannerDesktop.joinBannerDesktop {
+  display: none;
+}
+
+.pointsHuntButton {
+  justify-content: center;
+}
+
+.tabList {
+  width: 100%;
+}
+
+@media screen and (width >= 700px) {
+  .heading {
+    font-size: 36px;
+  }
+
+  .vaults {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.heading {
+  display: flex;
+  gap: 6px;
+  flex-direction: row;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@media screen and (width >= 1024px) {
+  .top {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .listViewSwitch.listViewSwitch {
+    display: flex;
+  }
+}
+
+.counter {
+  display: block;
+  width: fit-content;
+  height: 17px;
+  padding: 0 3px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  color: $text-black-body100;
+  background: $background-white;
+}
+
+.tabList.tabList {
+  background-color: $background-card;
+  border-radius: 40px;
+}
+
+.tab.tab {
+  span {
+    background-color: $background-chips !important;
+    border: none;
+    border-radius: 40px;
+  }
+}
+
+.tabContent.tabContent {
+  display: flex;
+  font-family: $poppins-font;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: $text-white-body100;
+  align-items: center;
+  gap: 8px;
+}
