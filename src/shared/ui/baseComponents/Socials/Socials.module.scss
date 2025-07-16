@@ -1,0 +1,28 @@
+.root {
+  display: flex;
+  gap: 12px;
+}
+
+.social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  background-color: $button-secondary-defaultBg;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  align-items: center;
+
+  svg {
+    fill: $text-white-body100;
+  }
+
+  &:hover {
+    background-color: $button-secondary-hoverBg;
+    border: 1px solid $button-secondary-hoverStroke;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

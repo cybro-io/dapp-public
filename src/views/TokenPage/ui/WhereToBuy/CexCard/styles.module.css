@@ -1,0 +1,30 @@
+.cardbg {
+  background: linear-gradient(
+    148deg,
+    rgb(255 255 255 / 10%) 3.15%,
+    rgb(107 109 121 / 7%) 96.78%
+  );
+  backdrop-filter: blur(76.7054px);
+  overflow: hidden;
+}
+
+.comingSoonBg {
+  position: absolute;
+  z-index: 1;
+  background: rgb(36 37 46 / 25%);
+  backdrop-filter: blur(5.5px) brightness(0.7);
+  inset: 0;
+}
+
+.cardbg::before {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  z-index: -2;
+  width: 80%;
+  height: 120px;
+  background: #fbff3a;
+  opacity: 0.24;
+  filter: blur(65px);
+  content: '';
+}

@@ -1,0 +1,166 @@
+@import '@/shared/styles/variables.scss';
+
+.user-menu__offer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  background: #000000;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 2px 10px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 147%;
+    color: rgb(255 255 255 / 60%);
+    background: #000000;
+    border: 2px solid #24252e;
+    border-radius: 200px;
+    transform: translate(-50%, -50%);
+    content: 'Exclusive Offer';
+    pointer-events: none;
+  }
+}
+
+.user-menu__offer-title {
+  margin-bottom: 2px;
+  font-family: Unbounded, Arial, open-sans, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.user-menu__offer-desc {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 147%;
+  text-align: center;
+  white-space: break-spaces;
+  color: #b2b2b2;
+
+  b {
+    font-weight: inherit;
+    color: #ffffff;
+  }
+}
+
+.user-menu__offer-btn {
+  width: 100%;
+  height: 53px;
+  margin-top: 14px;
+  padding: 0 22px;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 120%;
+  max-width: 293px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $unbounded-font;
+  text-transform: uppercase;
+  transition:
+    box-shadow 0.35s ease,
+    border 0.35s ease;
+
+  &--transparent {
+    height: 53px;
+    padding: 0 22px;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #ffffff;
+    border: 1px solid #535353;
+    border-radius: 11px;
+
+    &:hover {
+      box-shadow: inset 0 0 5px 0 #ffffff;
+    }
+  }
+
+  &--black {
+    height: 27px;
+    padding: 0 10px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #ffffff;
+    border: 1px solid #fbff3a;
+    border-radius: 5px;
+
+    @include laptop {
+      height: 36px;
+      padding: 0 15px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 8px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 1px 1px #fbff3a;
+    }
+  }
+
+  &--yellow {
+    height: 53px;
+    padding: 0 22px;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #0b0c1b;
+    background: #f9e727;
+    border-radius: 11px;
+
+    &:hover {
+      box-shadow: 0 0 0 1px #ffffff;
+    }
+  }
+
+  &--arrow {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      margin-left: 8px;
+      min-width: 14px;
+      min-height: 12px;
+      background: url('../../../../shared/assets/icons/double-left-arrow.svg')
+        50% 50% no-repeat;
+      transition: all 0.35s ease;
+      pointer-events: none;
+    }
+
+    &:hover {
+      &::after {
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  &--plus {
+    position: relative;
+
+    &::before {
+      content: '+';
+      display: block;
+      margin-right: 8px;
+      transition: all 0.35s ease;
+      pointer-events: none;
+    }
+
+    &:hover {
+      &::before {
+        transform: translateX(-5px);
+      }
+    }
+  }
+}
