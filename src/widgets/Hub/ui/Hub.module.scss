@@ -1,0 +1,60 @@
+.advantage1 {
+  background: #2a2b34 url('../lib/assets/hub-advantage-1.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+.advantage2 {
+  background: $background-modal url('../lib/assets/hub-advantage-2.png')
+    no-repeat bottom;
+  background-size: contain;
+}
+
+.advantage3 {
+  background:
+    url('../lib/assets/hub-advantage-3-mobile.png') no-repeat bottom,
+    linear-gradient(329deg, #faff00 -48.1%, rgb(0 0 0 / 27%) 78.77%);
+
+  @include md-screen {
+    background: url('../lib/assets/hub-advantage-3.png') no-repeat bottom;
+  }
+}
+
+.advantage4 {
+  background: $background-modal url('../lib/assets/hub-advantage-4.png')
+    no-repeat bottom;
+}
+
+.advantage5 {
+  background: $background-modal url('../lib/assets/hub-advantage-5.png')
+    no-repeat bottom;
+  background-size: contain;
+}
+
+.whyUs {
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #11121a transparent transparent #11121a;
+    content: '';
+    pointer-events: none;
+  }
+}
+
+.pwaRoot {
+  background: #2a2b34 url('../lib/assets/hub-pwa-bg-mobile.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+
+  @include lg-screen {
+    background: #2a2b34 url('../lib/assets/hub-pwa-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+  }
+}
