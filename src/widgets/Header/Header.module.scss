@@ -1,0 +1,148 @@
+.logo {
+  width: 92px;
+  height: 11px;
+}
+
+.navbar.navbar {
+  padding: 8px 24px;
+  background-color: $background-header;
+
+  header {
+    height: auto;
+    padding: 0;
+    max-width: $app-max-width;
+  }
+}
+
+.connectedWalletContainer {
+  display: flex;
+  padding: 8px 12px;
+  background-color: $background-card;
+  border-radius: 8px;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.avatarContainer {
+  img {
+    border-radius: 50%;
+  }
+}
+
+.leftContainer {
+  gap: 10px;
+  flex-grow: 0 !important;
+}
+
+.desktopMenu.desktopMenu {
+  display: none;
+}
+
+.burgerButton {
+  transform: rotate(0deg);
+
+  &.menuOpened {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(90deg);
+  }
+}
+
+.languageDropdown {
+  display: none;
+}
+
+.darkModeSwitch {
+  display: none;
+}
+
+.connectWallet {
+  padding: 8px 14px;
+}
+
+.menuLinkMobile.menuLinkMobile {
+  font-size: 20px;
+}
+
+.mobileMenu.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  height: calc(100dvh - var(--navbar-height)) !important;
+  padding: 24px;
+  background-color: $background-window;
+  justify-content: space-between;
+}
+
+.mobileMenuTop.mobileMenuTop {
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mobileMenuBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tooltipContainer {
+  background-color: transparent;
+}
+
+@include tablet {
+  .navbar.navbar {
+    padding: 12px 16px;
+
+    .connectWallet {
+      padding: 12px 14px;
+    }
+
+    .languageDropdown {
+      display: block;
+    }
+
+    .darkModeSwitch {
+      display: block;
+    }
+  }
+}
+
+@include desktop {
+  .navbar.navbar {
+    padding: 26px 16px;
+
+    .settingsButton {
+      display: none;
+    }
+
+    .logo {
+      width: 150px;
+      height: 18px;
+    }
+
+    .desktopMenu {
+      display: flex;
+      gap: 7px;
+      width: 100%;
+    }
+
+    .burgerButton {
+      display: none;
+    }
+
+    .menuContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+    }
+  }
+}
+
+@media screen and (width >= 1060px) {
+  .desktopMenu {
+    gap: 16px;
+  }
+}

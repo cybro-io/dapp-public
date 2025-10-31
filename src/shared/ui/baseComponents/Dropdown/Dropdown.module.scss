@@ -1,0 +1,57 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  font-family: $poppins-font;
+  font-weight: 500;
+  color: $text-white-body100;
+  border: 1px solid transparent;
+  outline: none;
+  align-items: center;
+
+  &:hover {
+    border: 1px solid $stroke-whiteBorder;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.arrow {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.rounded {
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 150%;
+  background: $background-chips;
+  border: 1px solid $stroke-tableBorder;
+  border-radius: 500px;
+  gap: 6px;
+}
+
+.flat {
+  padding: 8px;
+  font-size: 14px;
+  line-height: 120%;
+  background: $background-card;
+  border-radius: 10px;
+  gap: 8px;
+}
+
+.isOpened {
+  transform: rotate(0deg);
+}
+
+.selected {
+  background-color: white;
+
+  span {
+    color: $text-black-body100;
+  }
+}
