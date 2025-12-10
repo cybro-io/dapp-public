@@ -1,0 +1,10 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: $poppins-font;
+  background-color: $background-window;
+  min-height: 100vh;
+}

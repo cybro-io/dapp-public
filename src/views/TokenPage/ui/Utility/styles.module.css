@@ -1,0 +1,26 @@
+.bg {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 0;
+  background: black;
+  clip-path: polygon(
+    calc(100% - 0px) calc(100% - 0.49px),
+    63.5247px calc(100% - 0.49px),
+    0 calc(100% - 57.178px),
+    0 448px,
+    0 0,
+    1217.97px 0,
+    calc(100% - 64.53px) 0,
+    calc(100% - 0px) 57.5797px,
+    calc(100% - 0px) calc(100% - 0.49px)
+  );
+  padding-inline: 25px;
+}
+
+@media (width >= 1024px) {
+  .bg {
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 75px;
+  }
+}

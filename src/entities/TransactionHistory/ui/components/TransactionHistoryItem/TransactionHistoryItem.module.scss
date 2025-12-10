@@ -1,0 +1,112 @@
+.root {
+  width: 100%;
+  padding: 14px;
+  background-color: $background-chips;
+  border: 1px solid transparent;
+  border-radius: 14px;
+
+  &.dark {
+    background-color: transparent;
+  }
+
+  &.active {
+    border: 1px solid $text-accent-yellow;
+  }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 3px;
+}
+
+.heading {
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.value {
+  font-weight: 700;
+}
+
+.date {
+  color: $text-white-body40;
+}
+
+.fee {
+  color: $text-white-body40;
+}
+
+.bottom {
+  padding-top: 8px;
+  border-top: 1px dotted $stroke-tableBorder;
+}
+
+.sendingFrom {
+  color: $text-white-body60;
+}
+
+.detailsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addressContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.explorerLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 130%;
+  color: $text-white-body60;
+}
+
+.opened {
+  .top {
+    padding-bottom: 8px;
+  }
+}
+
+.downButton {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.isOpened {
+  transform: rotate(0deg);
+}

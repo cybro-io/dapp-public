@@ -1,0 +1,1 @@
+export { CustodialWalletAttentionModal } from './CustodialWalletAttentionModal';

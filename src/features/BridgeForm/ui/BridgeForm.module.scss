@@ -1,0 +1,31 @@
+.bg {
+  background: linear-gradient(0deg, #0e0e15 0%, #181922 100%);
+  transition: 0.5ms all;
+  cursor: pointer;
+
+  &[data-active='false']:hover {
+    outline: 1px solid #f9e727;
+  }
+
+  &[data-active='true'] {
+    background: linear-gradient(0deg, #04030b 0%, #dce100 100%);
+    border: 1px solid #f9e727;
+  }
+}
+
+.confirmationBg {
+  width: 100%;
+  height: 203px;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    width: 375px;
+    height: 208px;
+    background-image: url('../../../shared/assets/images/ConfirmationStakeBg.png'),
+      url('/SwapSuccesBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+  }
+}

@@ -1,0 +1,65 @@
+.bg {
+  background: url('./assets/bgMobile.webp');
+  background-repeat: no-repeat;
+  background-position: 50% 41%;
+  background-size: 460px;
+  overflow: hidden;
+}
+
+.subtitle {
+  display: flex;
+  width: fit-content;
+  font-family: $unbounded-font, Arial, open-sans, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    148deg,
+    rgb(255 255 255 / 10%) 3.15%,
+    rgb(107 109 121 / 7%) 96.78%
+  );
+  border-radius: 7px;
+  align-items: center;
+  backdrop-filter: blur(52px);
+  padding-inline: 6px;
+  padding-block: 2px;
+}
+
+@media (width >= 768px) {
+  .bg {
+    background: url('./assets/bg.webp');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 1575px;
+    min-height: 750px;
+  }
+}
+
+@media (width >= 1024px) {
+  .subtitle {
+    font-size: 32px;
+    border-radius: 11px;
+    padding-inline: 10px;
+  }
+
+  .bg {
+    background: url('./assets/bg.webp');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1575px;
+  }
+}
+
+.validator {
+  background: #11121a
+    linear-gradient(
+      148deg,
+      rgb(255 255 255 / 10%) 3.15%,
+      rgb(107 109 121 / 7%) 96.78%
+    );
+  border-radius: 12px;
+  transition: transform 0.35s ease;
+}
+
+.validator:hover {
+  transform: translateY(-2px);
+}

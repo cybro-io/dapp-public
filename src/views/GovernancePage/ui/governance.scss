@@ -1,0 +1,61 @@
+.hero-heading {
+  background: linear-gradient(
+    148deg,
+    rgb(255 255 255 / 10%) 3.15%,
+    rgb(107 109 121 / 7%) 96.78%
+  );
+}
+
+.bg {
+  background: url('../lib/assets/governance-bg.png') no-repeat bottom;
+  background-size: contain;
+}
+
+@media screen and (width <= 1330px) {
+  .bg {
+    background: url('../lib/assets/governance-mobile-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% -63px;
+  }
+}
+
+.corner-rect {
+  position: relative;
+  width: 445px;
+  height: 346px;
+  padding-top: 36px;
+  padding-left: 38px;
+  background: #0c0d15;
+
+  @media screen and (width <= 1330px) {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 0;
+    background: transparent;
+  }
+}
+
+.corner-rect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 35px solid #11121a;
+  border-left: 52px solid transparent;
+
+  @media screen and (width <= 1330px) {
+    border: none;
+  }
+}
+
+.corner-rect:where([data-isBlack='true']) {
+  background: black;
+
+  @media screen and (width <= 1330px) {
+    background: transparent;
+  }
+}
+
+.bg-raised {
+  background: url('../lib/assets/governance-money.png') no-repeat right;
+}

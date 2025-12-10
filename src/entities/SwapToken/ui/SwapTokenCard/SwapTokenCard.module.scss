@@ -1,0 +1,16 @@
+.container {
+  @apply outline-1 outline outline-stroke-tableBorder rounded-[20px];
+  @apply flex flex-col gap-4 pb-4;
+}
+
+.tokenCard {
+  @apply p-4 bg-background-chips rounded-[20px] flex flex-col gap-2 relative;
+
+  .header {
+    @apply inline-flex justify-between;
+  }
+
+  .content {
+    @apply inline-flex gap-[9px] items-center;
+  }
+}

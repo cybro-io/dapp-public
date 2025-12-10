@@ -1,0 +1,1 @@
+export { SeasonVaultBarChart } from './SeasonVaultBarChart';

@@ -1,0 +1,53 @@
+.root {
+  display: inline-flex;
+  width: fit-content;
+  padding: 4px 10px;
+  font-family: $poppins-font;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: none;
+  color: $text-white-body100;
+  background-color: $background-chips;
+  border-radius: 20px;
+  gap: 5px;
+  align-items: center;
+}
+
+.lg {
+  padding: 4px 14px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.sm {
+  padding: 1px 6px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.accent {
+  color: $text-black-body100;
+  background-color: $background-accentBold;
+}
+
+.outlined {
+  background-color: transparent;
+  border: 1px solid $stroke-whiteBorder;
+}
+
+.warning {
+  background-color: $error-bg;
+}
+
+.blue {
+  color: $chips-blue-light;
+  background-color: $chips-blue-dark;
+}
+
+.green {
+  color: $chips-green-light;
+  background-color: $chips-green-dark;
+}

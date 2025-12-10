@@ -1,0 +1,142 @@
+@import '@/shared/styles/variables.scss';
+
+.user-toggle {
+  position: relative;
+  display: flex;
+  padding: 0 15px 0 6px;
+  background: #000000;
+  border-radius: 6px;
+  transition: all 0.35s ease;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 27px;
+
+  @include tablet {
+    min-height: 42px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 1px #ffffff;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    width: 8px;
+    height: 6px;
+    background: url('../../../shared/assets/icons/triangle.svg') 50% 0 no-repeat;
+    transition: all 0.35s ease;
+    transform: translateY(-50%);
+    content: '';
+  }
+}
+
+.user-toggle__profile {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet {
+    width: 30px;
+    height: 30px;
+  }
+
+  &.active {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      width: 5px;
+      height: 5px;
+      background: #ff0000;
+      border-radius: 50%;
+      content: '';
+      pointer-events: none;
+
+      @include tablet {
+        top: -3px;
+        right: -3px;
+        width: 9px;
+        height: 9px;
+      }
+    }
+  }
+}
+
+.user-toggle__profile-icon {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+}
+
+.user-toggle__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user-toggle__inner {
+  position: relative;
+  display: flex;
+  padding: 0 10px;
+  justify-content: flex-start;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 20px;
+    background: rgb(255 255 255 / 30%);
+    transform: translateY(-50%);
+    content: '';
+    pointer-events: none;
+  }
+
+  &:first-child::before {
+    display: none;
+  }
+
+  &.landscape::before {
+    display: none;
+
+    @include landscape {
+      display: block;
+    }
+  }
+
+  &.landscape {
+    display: none;
+
+    @include landscape {
+      display: flex;
+    }
+  }
+}
+
+.user-toggle__name {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 120%;
+  color: rgb(255 255 255 / 70%);
+}
+
+.user-toggle__money {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.user-toggle__currency {
+  width: 17px;
+  height: 16px;
+  margin-left: 3px;
+}

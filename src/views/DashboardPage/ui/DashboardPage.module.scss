@@ -1,0 +1,35 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+  background:
+    linear-gradient(180deg, rgb(17 18 26 / 0%) 0%, $background-window 100%),
+    url('/RectBg.svg') repeat,
+    url('/CybroBgGrey.svg') 0 30px / 100% no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: relative;
+  margin-bottom: 22px;
+  font-size: 25px;
+  line-height: 120%;
+
+  &::before {
+    position: absolute;
+    top: -30px;
+    left: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: #fbff3a;
+    opacity: 0.24;
+    filter: blur(25px);
+    content: '';
+  }
+}
+
+.dashboardInfo {
+  width: 100%;
+  margin-bottom: 40px;
+}

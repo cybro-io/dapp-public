@@ -1,0 +1,58 @@
+.header {
+  text-align: center;
+}
+
+.mainContent {
+  margin: 0 auto;
+  padding: 32px 24px;
+  max-width: 1296px;
+}
+
+.main {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+
+  &.noFooter {
+    background-image: none;
+  }
+}
+
+.footer {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.logoBottomContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 55px;
+  overflow: hidden;
+}
+
+.logoBottom {
+  object-fit: fill;
+  width: 100%;
+  min-height: 100%;
+}
+
+@media screen and (width >= 700px) {
+  .mainContent {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@include desktop {
+  .header {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,195 @@
+.root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 35px;
+
+  .title {
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .imageContainerMobile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .subtitle {
+    margin: auto auto 24px;
+    text-align: center;
+  }
+
+  .description {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .joinUs {
+    max-width: 386px;
+    margin-bottom: 32px;
+    font-family: $poppins-font;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+
+    .accent {
+      color: $text-accent-yellow;
+    }
+  }
+
+  .input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 24px;
+    font-family: $poppins-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: $text-white-body100;
+    background-color: $background-chips;
+    border-radius: 20px;
+    outline: none;
+
+    &::placeholder {
+      color: $text-white-body60;
+    }
+  }
+
+  .submitButton {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .caption {
+    text-transform: initial;
+    color: $text-white-body60;
+
+    .bold {
+      color: $text-white-body100;
+    }
+  }
+
+  .imageContainerDesktop {
+    display: none;
+  }
+}
+
+@media screen and (width >= 650px) {
+  .joinUs {
+    font-size: 14px;
+  }
+
+  .formContainer {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 8px;
+    align-items: center;
+  }
+}
+
+@media screen and (width >= 850px) {
+  .description {
+    font-size: 18px;
+  }
+
+  .joinUs {
+    font-size: 16px;
+  }
+}
+
+@include desktop {
+  .root {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    padding-right: 40px;
+    padding-left: 100px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    .title {
+      margin-bottom: 40px;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 120%;
+      text-align: left;
+      text-transform: uppercase;
+
+      .accent {
+        color: $text-accent-yellow;
+      }
+    }
+
+    .subtitle {
+      margin: 0 0 26px;
+      text-align: left;
+      max-width: unset;
+    }
+
+    .description {
+      margin-bottom: 65px;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .joinUs {
+      margin-top: auto;
+      margin-bottom: 30px;
+      text-align: left;
+      color: $text-white-body80;
+    }
+
+    .formContainer {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      margin-right: 60px;
+      margin-bottom: 15px;
+      padding: 4px;
+      background-color: $background-chips;
+      border-radius: 20px;
+      align-items: center;
+    }
+
+    .input {
+      margin-bottom: 0;
+    }
+
+    .submitButton {
+      margin-bottom: 0;
+    }
+
+    .imageContainerDesktop {
+      display: block;
+    }
+
+    .caption {
+      text-align: center;
+    }
+
+    .imageContainerMobile {
+      display: none;
+    }
+  }
+}
+
+@include desktopLarge {
+  .root {
+    grid-column-gap: 80px;
+
+    .description {
+      font-size: 18px;
+    }
+
+    .joinUs {
+      margin-bottom: 60px;
+      font-size: 18px;
+    }
+  }
+}
