@@ -1,0 +1,12 @@
+Dockerfile
+.dockerignore
+node_modules
+.next
+.git
+.helm
+.github
+.husky
+.vscode
+*.md
+npm-debug.log
+.env*
